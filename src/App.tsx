@@ -1,4 +1,3 @@
-import React from "react";
 import Picasso from "@toptal/picasso-provider";
 import { Button, Page, Container } from "@toptal/picasso";
 

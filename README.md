@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Picasso, CRA, and TypeScript
+
+This project is using Picasso UI library and react-app-rewired to make everything work together.
+
+CRA has a problem with supporting a `.mjs` files/packages that include these files. That is where `react-app-rewired` comes to play.
+
+Inside `config-overrides.js` is a rule that resolves `.mjs` files so they work with create-react-app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
