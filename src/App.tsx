@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Picasso from "@toptal/picasso-provider";
+import { Button, Page, Container } from "@toptal/picasso";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Picasso>
+      <Page>
+        <Page.TopBar title="App Page" />
+        <Page.Content>
+          <Page.Article>
+            <Container
+              top={7}
+              bottom={7}
+              flex
+              justifyContent="center"
+              direction="column"
+            >
+              <Container flex bottom={2}>
+                Your application goes here
+              </Container>
+              <Container>
+                <Button>Hello world!</Button>
+              </Container>
+            </Container>
+          </Page.Article>
+        </Page.Content>
+        <Page.Footer />
+      </Page>
+    </Picasso>
   );
 }
 
